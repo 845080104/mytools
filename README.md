@@ -42,7 +42,7 @@ pip install requests
 
 修改 `clone_projects.py` 脚本中的配置变量以符合您的需求：
 
-\`\`\`python
+```python
 GITLAB_URL = 'https://dev.cgdg.com:50023/api/v4'
 GROUP_ID = '28'  # 替换为您的组ID
 PRIVATE_TOKEN = 'your-new-private-token'  # 替换为您的GitLab API访问令牌
@@ -51,15 +51,15 @@ MAX_CLONE_COUNT = 10  # 最大克隆项目数量
 SKIP_EXISTING_PROJECTS = True  # 是否跳过已存在的项目目录
 CLONE_DELAY = 5  # 每次克隆后的延迟时间（秒）
 MAX_RETRIES = 3  # 克隆失败时的最大重试次数
-\`\`\`
+```
 
 ### 运行脚本
 
 打开终端或命令行工具，导航到脚本所在的目录，运行以下命令：
 
-\`\`\`sh
+```sh
 python clone_projects.py
-\`\`\`
+```
 
 ## 注意事项
 
