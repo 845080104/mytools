@@ -1,4 +1,4 @@
-
+README_CONTENT = """
 # GitLab Clone Tool
 
 一个用于克隆GitLab项目的Python脚本工具。
@@ -46,7 +46,7 @@ pip install requests
 GITLAB_URL = 'https://dev.cgdg.com:50023/api/v4'
 GROUP_ID = '28'  # 替换为您的组ID
 PRIVATE_TOKEN = 'your-new-private-token'  # 替换为您的GitLab API访问令牌
-CLONE_DIR = 'C:\Users\liuju\Desktop\allCode'  # 项目克隆到的目录
+CLONE_DIR = 'C:\\Users\\liuju\\Desktop\\allCode'  # 项目克隆到的目录
 MAX_CLONE_COUNT = 10  # 最大克隆项目数量
 SKIP_EXISTING_PROJECTS = True  # 是否跳过已存在的项目目录
 CLONE_DELAY = 5  # 每次克隆后的延迟时间（秒）
@@ -69,3 +69,10 @@ python clone_projects.py
 ## 许可证
 
 本项目采用 MIT 许可证。详情请参阅 [LICENSE](LICENSE) 文件。
+"""
+
+# 将README内容写入README.md文件
+with open("README.md", "w", encoding="utf-8") as file:
+    file.write(README_CONTENT)
+
+print("README.md 文件已成功创建")
