@@ -34,9 +34,9 @@ README_CONTENT = """
 
 在运行脚本之前，请确保已安装所需的Python库。您可以使用以下命令安装这些库：
 
-\`\`\`sh
+```sh
 pip install requests
-\`\`\`
+```
 
 ### 修改配置
 
