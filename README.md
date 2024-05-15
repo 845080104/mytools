@@ -32,6 +32,12 @@
 
 ### 安装依赖
 
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
 在运行脚本之前，请确保已安装所需的Python库。您可以使用以下命令安装这些库：
 
 ```sh
@@ -56,6 +62,12 @@ MAX_RETRIES = 3  # 克隆失败时的最大重试次数
 ### 运行脚本
 
 打开终端或命令行工具，导航到脚本所在的目录，运行以下命令：
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
 
 ```sh
 python clone_projects.py
